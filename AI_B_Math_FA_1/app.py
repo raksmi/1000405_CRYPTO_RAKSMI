@@ -95,18 +95,25 @@ def load_css():
 load_css()
 
 
-def display_logo():
-    st.markdown("""
-<div class="logo-container">
-    <h1 style="margin: 10px 0;">📈 Crypto Volatility Visualizer</h1>
-    <p style="color: rgba(255,255,255,0.8); margin: 0;">
-        Interactive dashboard to explore real crypto volatility and simulate market swings
-    </p>
-</div>
-""", unsafe_allow_html=True)
+import os
+import streamlit as st
 
-st.image("mascot.png", width=180)
-display_logo()
+col1, col2 = st.columns([1, 4])
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+mascot_path = os.path.join(current_dir, "mascot.png")
+
+with col1:
+    st.image(mascot_path, width=120)
+
+with col2:
+    st.markdown("""
+    <h1 style="color:white;">📈 Crypto Volatility Visualizer</h1>
+    <p style="color:gray;">Interactive dashboard for volatility + simulations</p>
+    """, unsafe_allow_html=True)
+
+
+
 
 def generate_crypto_data(days=365):
     np.random.seed(42)
@@ -469,5 +476,6 @@ if compare_mode:
         font=dict(color='#ffffff')
     )
     c2.plotly_chart(fig_volatile, use_container_width=True)
+
 
 
