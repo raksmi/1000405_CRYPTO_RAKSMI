@@ -103,7 +103,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 logo_path = os.path.join(current_dir, "mascot.png")
 
 with col1:
-    st.image(logo_path, width=210)
+    st.image(logo_path, width=250)
 
 with col2:
     st.markdown("""
@@ -476,6 +476,7 @@ if compare_mode:
         font=dict(color='#ffffff')
     )
     c2.plotly_chart(fig_volatile, use_container_width=True)
+
 
 
 
