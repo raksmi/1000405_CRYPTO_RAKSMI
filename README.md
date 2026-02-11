@@ -4,7 +4,7 @@ The **Crypto Volatility Visualizer** is an interactive Streamlit-based dashboard
 
 This application helps users explore real-world crypto price trends while also experimenting with mathematical volatility patterns through simulations.
 
----
+
 
 ## 🚀 Key Features
 
@@ -33,7 +33,7 @@ This application helps users explore real-world crypto price trends while also e
 - 🔁 **Stable vs Volatile Comparison Mode**  
   Visual comparison between low-risk and high-risk market behavior.
 
----
+
 
 ## 🛠 Modules Used
 
@@ -42,7 +42,7 @@ This application helps users explore real-world crypto price trends while also e
 - **Pandas & NumPy**
 - **Plotly (Interactive Graphs)**
 
----
+
 
 ##  Important Note (Recommended Setting)
 
