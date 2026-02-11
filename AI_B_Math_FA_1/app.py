@@ -8,7 +8,6 @@ import base64
 
 st.set_page_config(
     page_title="Crypto Volatility Visualizer",
-    page_icon="📈",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -476,6 +475,7 @@ if compare_mode:
         font=dict(color='#ffffff')
     )
     c2.plotly_chart(fig_volatile, use_container_width=True)
+
 
 
 
