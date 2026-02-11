@@ -97,16 +97,15 @@ load_css()
 
 def display_logo():
     st.markdown("""
-    <div class="logo-container">
-        <img src="data:image/png;base64,{}" width="150" style="border-radius: 10px; margin-bottom: 10px;">
-        <h1 style="margin: 10px 0;">📈 Crypto Volatility Visualizer</h1>
-        <p style="color: rgba(255,255,255,0.8); margin: 0;">Interactive dashboard to explore real crypto volatility and simulate market swings</p>
-    </div>
-    """, unsafe_allow_html=True)
+<div class="logo-container">
+    <h1 style="margin: 10px 0;">📈 Crypto Volatility Visualizer</h1>
+    <p style="color: rgba(255,255,255,0.8); margin: 0;">
+        Interactive dashboard to explore real crypto volatility and simulate market swings
+    </p>
+</div>
+""", unsafe_allow_html=True)
 
-with open("mascot.png", "rb") as image_file:
-    encoded_string = base64.b64encode(image_file.read()).decode()
-
+st.image("mascot.png", width=180)
 display_logo()
 
 def generate_crypto_data(days=365):
@@ -470,4 +469,5 @@ if compare_mode:
         font=dict(color='#ffffff')
     )
     c2.plotly_chart(fig_volatile, use_container_width=True)
+
 
