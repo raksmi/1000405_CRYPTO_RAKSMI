@@ -104,7 +104,7 @@ def display_logo():
     </div>
     """, unsafe_allow_html=True)
 
-with open(r"C:\Users\tnvxx\Videos\AI_B_Math_FA_1\mascot.png", "rb") as image_file:
+with open("mascot.png", "rb") as image_file:
     encoded_string = base64.b64encode(image_file.read()).decode()
 
 display_logo()
@@ -134,7 +134,7 @@ def generate_crypto_data(days=365):
 
 try:
     
-    DATA_FILE = r"C:\Users\tnvxx\Videos\AI_B_Math_FA_1\real_data.csv"
+    DATA_FILE = btcusd_1-min_data.csv.crdownload
     df = pd.read_csv(DATA_FILE)
     df["Timestamp"] = pd.to_datetime(df["Timestamp"], unit="s")
 except:
@@ -470,3 +470,4 @@ if compare_mode:
         font=dict(color='#ffffff')
     )
     c2.plotly_chart(fig_volatile, use_container_width=True)
+
