@@ -52,7 +52,6 @@ For the best experience, please switch Streamlit to **Dark Theme**:
 
 This ensures the dashboard visuals match the intended futuristic UI design.
 
----
 
 ## 🎯 Purpose
 
