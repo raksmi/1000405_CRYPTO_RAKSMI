@@ -107,7 +107,7 @@ with col1:
 
 with col2:
     st.markdown("""
-    <h1 style="color:white;">📈 Crypto Volatility Visualizer</h1>
+    <h1 style="color:white;">Crypto Volatility Visualizer</h1>
     <p style="color:gray;">Interactive dashboard for volatility + simulations</p>
     """, unsafe_allow_html=True)
 
@@ -475,6 +475,7 @@ if compare_mode:
         font=dict(color='#ffffff')
     )
     c2.plotly_chart(fig_volatile, use_container_width=True)
+
 
 
 
