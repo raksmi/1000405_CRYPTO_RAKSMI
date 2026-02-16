@@ -4,6 +4,9 @@ The **Crypto Volatility Visualizer** is an interactive Streamlit-based dashboard
 
 This application helps users explore real-world crypto price trends while also experimenting with mathematical volatility patterns through simulations.
 
+Live link:
+https://cryptostimulation.streamlit.app/ 
+
 
 
 ## 🚀 Key Features
